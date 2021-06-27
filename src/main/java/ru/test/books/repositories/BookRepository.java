@@ -10,5 +10,6 @@ import ru.test.books.model.Book;
 @Repository
 public interface BookRepository extends CrudRepository<Book, Long> {
     List<Book> findAllByAuthors(Author author);
+
     Optional<Book> findByTitle(String title);
 }
